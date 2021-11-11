@@ -7,6 +7,7 @@ const server = app.listen(port, () => {
  console.log(`Cart app listening at http://localhost:${port}`);
 });
 //send an HTTP response when receiving HTTP GET /
+app.use(express.static('public'));
 app.get('/', (req, res) => {
- res.send("Hello, your server is up and running yay!");
+ res.sendFile('index.html', { root: __dirname });
 });
