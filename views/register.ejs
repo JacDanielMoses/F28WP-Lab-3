@@ -1,7 +1,8 @@
 <%- include('header'); -%>
+
  <div class="content">
  <h1 id="welcome">Register</h1>
- <form action="/action_page.php">
+ <form method="post(/api/register)">
     <label for="society">Society:</label>
     <input type="text" id="society" name="society"><br><br>
 
@@ -29,7 +30,7 @@
     <label for="Informations">Informations:</label>
     <input type="text" id="Informations" name="Informations"><br><br>
     
-    <label for="max_outstanding">max_outstanding:</label>
+    <label for="max_outstanding">Max Outstanding:</label>
     <input type="int" id="max_outstanding" name="max_outstanding"><br><br>
     
     <input type="submit" value="Submit" onclick="getlogin">

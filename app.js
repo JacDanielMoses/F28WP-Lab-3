@@ -20,8 +20,8 @@ app.get('/contacts', (req, res) => {
 });
 
 //route for register
-app.post('/api/register', (req, res) => {
-    res.render('register'); 
+app.get('/register', (req, res) => {
+    res.render('register');
    });
 
 //route for login
