@@ -1,0 +1,38 @@
+<%- include('header'); -%>
+ <div class="content">
+ <h1 id="welcome">Register</h1>
+ <form action="/action_page.php">
+    <label for="society">Society:</label>
+    <input type="text" id="society" name="society"><br><br>
+
+    <label for="addres">Address:</label>
+    <input type="text" id="addres" name="addres"><br><br>
+
+    <label for="zipcode">ZIP Code:</label>
+    <input type="text" id="zipcode" name="zipcode"><br><br>
+    
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+    
+    <label for="fax">fAX:</label>
+    <input type="text" id="fax" name="fax"><br><br>
+    
+    <label for="confirmation">Confirmation:</label>
+    <input type="checkbox" id="confirmation" name="confirmation"><br><br>
+    
+    <label for="payment">Payment:</label>
+    <input type="text" id="payment" name="payment"><br><br>
+    
+    <label for="Informations">Informations:</label>
+    <input type="text" id="Informations" name="Informations"><br><br>
+    
+    <label for="max_outstanding">max_outstanding:</label>
+    <input type="int" id="max_outstanding" name="max_outstanding"><br><br>
+    
+    <input type="submit" value="Submit" onclick="getlogin">
+  </form>
+ </div>
+<%- include('footer'); -%>
