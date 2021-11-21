@@ -15,8 +15,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- CREATE DATABASE IF NOT EXISTS sales;
-USE sql6450177;
+CREATE DATABASE IF NOT EXISTS sales;
+USE epiz_30418386_products;
 --
 -- Table structure for table `supplier`
 --
