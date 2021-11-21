@@ -22,9 +22,18 @@ app.get('/contacts', (req, res) => {
 //route for register
 app.get('/register', (req, res) => {
     res.render('register');
-   });
+});
 
 //route for login
 app.get('/login', (req, res) => {
     res.render('login'); 
+});
+
+//route for catalog
+app.get('/api/catalog', (req, res) => {
+    res.render('catalog'); 
    });
+
+//pass requests to the router middleware
+const router = require('./routes/post');
+app.use(router);
