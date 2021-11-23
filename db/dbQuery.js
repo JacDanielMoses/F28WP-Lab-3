@@ -1,12 +1,12 @@
 const mysql = require('mysql');
-const databasename = "epiz_30418386_products";
+const databasename = "sql6453223";
 
 var pool = mysql.createPool({
     connectionLimit: 100,
-    host: "sql106.epizy.com",
-    user: "epiz_30418386",
-    password: "",
-    database: "epiz_30418386_products",
+    host: "sql6.freemysqlhosting.net",
+    user: "sql6453223",
+    password: "q4CjhEdeDV",
+    database: "sql6453223",
     debug: true
 });
 
