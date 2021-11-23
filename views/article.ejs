@@ -1,0 +1,25 @@
+%- include('header'); -%>
+    <div class="content">
+        <h1>Selected articles</h1>
+        <table id="article">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th scope="col">Reference</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <% { %>
+                    <tr>
+                        <th scope="row">
+                            <%= article %>
+                        </th>
+                    <% }) %>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <%- include('footer'); -%>

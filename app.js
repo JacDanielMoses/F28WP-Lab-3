@@ -38,4 +38,9 @@ app.get('/api/catalog', (req, res) => {
     res.render('catalog'); 
 });
 
+app.get('/api/article', (req, res) => {
+    //pass requests to the router middleware
+    res.render('article'); 
+});
+
 
