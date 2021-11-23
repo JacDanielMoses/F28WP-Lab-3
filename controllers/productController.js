@@ -1,8 +1,7 @@
 const getCatalog = (request, response) => {
     const catalogServices = require('../services/productServices');
     catalogServices.searchService(function(err, rows) {
-        response.json(rows);
-        response.end();
+        response.render('catalog', { product: rows });
     });
 };
 

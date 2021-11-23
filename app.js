@@ -6,6 +6,8 @@ const port = process.argv[2] || process.env.PORT || 3000;
 const server = app.listen(port, () => {
  console.log(`Cart app listening at http://localhost:${port}`);
 });
+const router = require('./routes/post');
+const clientController = require("./controllers/clientController")
 
 //handling static HTML and EJS templates
 app.use(express.static('public'));
@@ -31,9 +33,10 @@ app.get('/login', (req, res) => {
 
 //route for catalog
 app.get('/api/catalog', (req, res) => {
+    //pass requests to the router middleware
+    
     res.render('catalog'); 
-   });
+    app.use(router);
+});
 
-//pass requests to the router middleware
-const router = require('./routes/post');
-app.use(router);
+
